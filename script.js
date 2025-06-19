@@ -21,29 +21,30 @@ document.addEventListener("DOMContentLoaded", () => {
 	//                                                                 return;
 	//                                                                     }
 	//
-	//                                                                         // If validation passes, submit the form data to Formspree
+	//                                                                         // Submit using FormData (no headers needed)
 	//                                                                             fetch(form.action, {
 	//                                                                                   method: 'POST',
-	//                                                                                         body: new FormData(form),
-	//                                                                                               headers: { 'Accept': 'application/json' }
-	//                                                                                                   }).then(response => {
-	//                                                                                                         if (response.ok) {
-	//                                                                                                                 alert('Thanks for your message! I will get back to you soon.');
-	//                                                                                                                         form.reset();
-	//                                                                                                                               } else {
-	//                                                                                                                                       alert('Oops! There was a problem submitting your form.');
-	//                                                                                                                                             }
-	//                                                                                                                                                 }).catch(() => {
-	//                                                                                                                                                       alert('Oops! There was a problem submitting your form.');
-	//                                                                                                                                                           });
+	//                                                                                         body: new FormData(form)
+	//                                                                                             })
+	//                                                                                                 .then(response => {
+	//                                                                                                       if (response.ok) {
+	//                                                                                                               alert('Thanks for your message! I will get back to you soon.');
+	//                                                                                                                       form.reset();
+	//                                                                                                                             } else {
+	//                                                                                                                                     alert('Oops! There was a problem submitting your form.');
+	//                                                                                                                                           }
+	//                                                                                                                                               })
+	//                                                                                                                                                   .catch(() => {
+	//                                                                                                                                                         alert('Oops! There was a problem submitting your form.');
 	//                                                                                                                                                             });
+	//                                                                                                                                                               });
 	//
-	//                                                                                                                                                               // Hamburger menu toggle for mobile nav
-	//                                                                                                                                                                 const menuToggle = document.getElementById("menu-toggle");
-	//                                                                                                                                                                   const navLinks = document.getElementById("nav-links");
+	//                                                                                                                                                                 // Hamburger menu toggle for mobile navigation
+	//                                                                                                                                                                   const menuToggle = document.getElementById("menu-toggle");
+	//                                                                                                                                                                     const navLinks = document.getElementById("nav-links");
 	//
-	//                                                                                                                                                                     menuToggle.addEventListener("click", () => {
-	//                                                                                                                                                                         navLinks.classList.toggle("show");
-	//                                                                                                                                                                           });
-	//                                                                                                                                                                           });
+	//                                                                                                                                                                       menuToggle.addEventListener("click", () => {
+	//                                                                                                                                                                           navLinks.classList.toggle("show");
+	//                                                                                                                                                                             });
+	//                                                                                                                                                                             });
 	//
