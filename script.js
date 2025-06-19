@@ -21,7 +21,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 		      fetch(form.action, {
 			            method: 'POST',
-			            body: new FormData(form)
+			            body: new FormData(form),
+						headers: { 'Accept': 'application/json' }
 			          })
 		        .then(response => {
 				        if (response.ok) {
